@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Skyline Lounge – Premium Shisha | Bar | Lounge in Lampertheim</title>
+<meta name="description" content="Skyline Lounge Lampertheim – Premium Shisha, edle Cocktails und elegante Atmosphäre. Ernst-Ludwig-Straße 11, 68623 Lampertheim. Jetzt Tisch reservieren." />
+<meta property="og:title" content="Skyline Lounge – Premium Shisha Bar Lampertheim" />
+<meta property="og:description" content="Premium Shisha. Elegante Atmosphäre. Unvergessliche Momente in Lampertheim." />
+<meta property="og:type" content="website" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          gold:   { DEFAULT: '#c9a227', light: '#d4af37', soft: '#e8c95a', deep: '#8a6d14' },
+          ink:    { DEFAULT: '#0a0a0a', 800: '#111111', 700: '#181818' }
+        },
+        fontFamily: {
+          display: ['Cinzel', 'serif'],
+          serif:   ['"Cormorant Garamond"', 'serif'],
+          sans:    ['Inter', 'system-ui', 'sans-serif']
+        }
+      }
+    }
+  }
+</script>
+
+<style>
+  html { scroll-behavior: smooth; }
+  body {
+    background-color: #060606;
+    color: #e9e6df;
+    font-family: 'Inter', sans-serif;
+    background-image:
+      radial-gradient(1200px 800px at 20% -10%, rgba(201,162,39,0.10), transparent 60%),
+      radial-gradient(1000px 700px at 110% 20%, rgba(201,162,39,0.07), transparent 60%),
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='600'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.05  0 0 0 0 0.05  0 0 0 0.35 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    background-attachment: fixed, fixed, fixed;
+  }
+  .marble {
+    background:
+      radial-gradient(ellipse at 30% 20%, rgba(212,175,55,0.12), transparent 55%),
+      radial-gradient(ellipse at 80% 80%, rgba(212,175,55,0.08), transparent 60%),
+      linear-gradient(135deg, #0b0b0b 0%, #141414 40%, #0a0a0a 100%);
+    position: relative;
+  }
+  .marble::before {
+    content:""; position:absolute; inset:0; pointer-events:none; opacity:.35;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 800'><g fill='none' stroke='%23d4af37' stroke-width='0.6' opacity='0.55'><path d='M0 120 Q200 60 400 180 T800 140'/><path d='M0 320 Q220 260 420 360 T800 300'/><path d='M0 520 Q180 470 380 560 T800 500'/><path d='M0 700 Q210 640 410 740 T800 680'/><path d='M120 0 Q200 200 80 400 T160 800'/><path d='M520 0 Q620 220 480 420 T560 800'/></g></svg>");
+    background-size: cover;
+  }
+  .text-gradient-gold {
+    background: linear-gradient(180deg,#f3d97a 0%,#d4af37 45%,#a07c10 100%);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .gold-border { border: 1px solid rgba(212,175,55,0.35); }
+  .gold-hairline { border-color: rgba(212,175,55,0.25); }
+  .btn-gold {
+    background: linear-gradient(180deg,#e8c95a,#c9a227 60%,#8a6d14);
+    color:#0a0a0a; font-weight:600; letter-spacing:.05em;
+    box-shadow: 0 8px 30px -10px rgba(212,175,55,0.55), inset 0 1px 0 rgba(255,255,255,.35);
+    transition: transform .25s ease, box-shadow .25s ease, filter .25s ease;
+  }
+  .btn-gold:hover { transform: translateY(-2px); filter: brightness(1.05); }
+  .btn-ghost-gold {
+    border:1px solid rgba(212,175,55,0.55); color:#e8c95a;
+    transition: all .25s ease; background: rgba(0,0,0,0.2);
+  }
+  .btn-ghost-gold:hover { background: rgba(212,175,55,0.12); color:#fff; }
+  .card-dark {
+    background: linear-gradient(180deg, rgba(20,20,20,0.95), rgba(10,10,10,0.95));
+    border: 1px solid rgba(212,175,55,0.18);
+    box-shadow: 0 30px 60px -30px rgba(0,0,0,.8), inset 0 1px 0 rgba(212,175,55,0.08);
+  }
+  .brush-title {
+    position:relative; display:inline-block; padding: .35em 1.2em;
+  }
+  .brush-title::before {
+    content:""; position:absolute; inset:0; z-index:-1; border-radius:4px;
+    background:
+      radial-gradient(ellipse at center, rgba(212,175,55,0.22), transparent 70%),
+      linear-gradient(90deg, transparent, rgba(212,175,55,0.18), transparent);
+    filter: blur(6px);
+  }
+  .menu-row { border-bottom: 1px dashed rgba(212,175,55,0.18); }
+  .menu-row:last-child { border-bottom: none; }
+  .smoke { position:absolute; pointer-events:none; opacity:.5; mix-blend-mode:screen; }
+  .reveal { opacity:1; transform:none; }
+  .nav-link { position:relative; }
+  .nav-link::after {
+    content:""; position:absolute; left:0; right:0; bottom:-6px; height:1px;
+    background: linear-gradient(90deg, transparent, #d4af37, transparent);
+    transform: scaleX(0); transition: transform .3s ease; transform-origin:center;
+  }
+  .nav-link:hover::after { transform: scaleX(1); }
+  .tab-active { color:#0a0a0a !important; background: linear-gradient(180deg,#e8c95a,#c9a227); }
+  details > summary { list-style:none; cursor:pointer; }
+  details > summary::-webkit-details-marker { display:none; }
+  .logo-ring {
+    background: radial-gradient(circle at 30% 30%, #f3d97a, #c9a227 55%, #6a520c 100%);
+    box-shadow: 0 0 0 1px rgba(0,0,0,.5), 0 8px 30px -8px rgba(212,175,55,.6), inset 0 0 20px rgba(0,0,0,.4);
+  }
+  .site-logo {
+    height: auto;
+    width: auto;
+    object-fit: contain;
+    display: block;
+  }
+  .site-logo-header { max-height: 68px; max-width: 280px; }
+  .site-logo-hero { max-height: min(420px, 55vh); max-width: min(680px, 92vw); margin: 0 auto; }
+  .hero-slider { position: absolute; inset: 0; overflow: hidden; z-index: 0; }
+  .hero-slide {
+    position: absolute; inset: 0;
+    background-size: cover; background-position: center;
+    opacity: 0; transition: opacity 1.8s ease-in-out;
+    transform: scale(1.04);
+  }
+  .hero-slide.active { opacity: 1; transform: scale(1); transition: opacity 1.8s ease-in-out, transform 8s ease-out; }
+  .hero-overlay {
+    position: absolute; inset: 0; z-index: 1;
+    background:
+      linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.45) 40%, rgba(0,0,0,0.75) 100%),
+      radial-gradient(ellipse at 50% 40%, rgba(212,175,55,0.12), transparent 55%);
+  }
+  #top { isolation: isolate; }
+  .gallery-item { overflow:hidden; border-radius: 10px; position:relative; }
+  .gallery-item img { transition: transform .8s ease, filter .8s ease; filter: saturate(.85) brightness(.85); }
+  .gallery-item:hover img { transform: scale(1.06); filter: saturate(1) brightness(1); }
+  .gallery-item::after {
+    content:""; position:absolute; inset:0; border:1px solid rgba(212,175,55,.25); border-radius:10px; pointer-events:none;
+  }
+  ::selection { background:#d4af37; color:#0a0a0a; }
+</style>
+</head>
+<body class="antialiased">
+
+<!-- ============ LOGO COMPONENT (reusable inline SVG-like) ============ -->
+<template id="sl-logo">
+  <div class="flex items-center gap-3">
+    <div class="logo-ring w-11 h-11 rounded-full flex items-center justify-center">
+      <span class="font-display text-ink text-lg font-bold tracking-tight">SL</span>
+    </div>
+    <div class="leading-tight">
+      <div class="font-display text-gold-light tracking-[0.25em] text-sm">SKYLINE</div>
+      <div class="text-[10px] tracking-[0.3em] text-gold/80">SHISHA · BAR · LOUNGE</div>
+    </div>
+  </div>
+</template>
+
+<!-- ============ NAVBAR ============ -->
+<header id="navbar" class="fixed top-0 inset-x-0 z-50 transition-all duration-500 backdrop-blur-md bg-black/60 border-b border-gold/10">
+  <div class="max-w-7xl mx-auto px-5 lg:px-10 h-20 flex items-center justify-between">
+    <a href="#top" class="flex items-center">
+      <img src="/images/logo.png" alt="Skyline Lounge" class="site-logo site-logo-header">
+    </a>
+
+    <nav class="hidden lg:flex items-center gap-9 text-sm tracking-wider text-stone-200/90">
+      <a href="#about"    class="nav-link hover:text-gold-light">ÜBER UNS</a>
+      <a href="#menu"     class="nav-link hover:text-gold-light">MENÜ</a>
+      <a href="#shisha"   class="nav-link hover:text-gold-light">SHISHA</a>
+      <a href="#gallery"  class="nav-link hover:text-gold-light">GALERIE</a>
+      <a href="#location" class="nav-link hover:text-gold-light">STANDORT</a>
+      <a href="#contact"  class="nav-link hover:text-gold-light">KONTAKT</a>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <button onclick="openReserve()" class="btn-gold px-5 py-2.5 rounded-full text-sm uppercase">Tisch reservieren</button>
+      <button id="burger" class="lg:hidden text-gold-light p-2" aria-label="Menu">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div id="mobileNav" class="lg:hidden hidden border-t border-gold/15 bg-black/90 backdrop-blur-md">
+    <div class="px-6 py-4 flex flex-col gap-3 text-sm tracking-widest">
+      <a href="#about" class="py-2 hover:text-gold-light">ÜBER UNS</a>
+      <a href="#menu" class="py-2 hover:text-gold-light">MENÜ</a>
+      <a href="#shisha" class="py-2 hover:text-gold-light">SHISHA</a>
+      <a href="#gallery" class="py-2 hover:text-gold-light">GALERIE</a>
+      <a href="#location" class="py-2 hover:text-gold-light">STANDORT</a>
+      <a href="#contact" class="py-2 hover:text-gold-light">KONTAKT</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="top" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-24">
+  <div class="hero-slider" aria-hidden="true">
+    <div class="hero-slide active" style="background-image:url('/images/interior-lounge.png')"></div>
+    <div class="hero-slide" style="background-image:url('/images/interior-gaming.png')"></div>
+  </div>
+  <div class="hero-overlay" aria-hidden="true"></div>
+
+  <div class="relative z-10 text-center px-6 max-w-5xl">
+    <div class="reveal flex justify-center mb-8">
+      <img src="/images/logo.png" alt="Skyline Lounge" class="site-logo site-logo-hero">
+    </div>
+    <p class="reveal text-gold-light tracking-[0.6em] text-xs sm:text-sm mb-6">— LAMPERTHEIM —</p>
+    <p class="reveal mt-8 font-serif italic text-xl sm:text-2xl text-stone-300/90 max-w-2xl mx-auto">
+      Premium Shisha. Elegante Atmosphäre.<br/>Unvergessliche Momente in Lampertheim.
+    </p>
+    <div class="reveal mt-10 flex flex-wrap justify-center gap-4">
+      <button onclick="openReserve()" class="btn-gold px-8 py-4 rounded-full text-sm uppercase">Jetzt reservieren</button>
+      <a href="#menu" class="btn-ghost-gold px-8 py-4 rounded-full text-sm uppercase">Zum Menü</a>
+    </div>
+  </div>
+
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-gold/70 text-xs tracking-[0.4em] animate-pulse">SCROLL</div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="relative py-28 px-6">
+  <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+    <div class="reveal">
+      <p class="text-gold tracking-[0.4em] text-xs mb-4">ÜBER UNS</p>
+      <h2 class="font-display text-4xl sm:text-5xl text-gradient-gold mb-8">Wo Stil auf Genuss trifft.</h2>
+      <p class="font-serif text-lg text-stone-300 leading-relaxed mb-5">
+        Die <span class="text-gold-light">Skyline Lounge</span> ist mehr als nur eine Shisha Bar – sie ist ein Rückzugsort
+        im Herzen von Lampertheim. Edles Interieur, warmes Goldlicht und der unverkennbare Duft erlesener Tabake schaffen
+        eine Atmosphäre, in der Zeit kurz stehen bleibt.
+      </p>
+      <p class="font-serif text-lg text-stone-300 leading-relaxed">
+        Unser Team verbindet handverlesene Shisha-Sorten, sorgfältig gemixte Cocktails und einen herzlichen Service
+        zu einem Erlebnis, das man so schnell nicht vergisst. Willkommen über den Dächern des Alltags.
+      </p>
+      <div class="mt-10 grid grid-cols-3 gap-6">
+        <div class="text-center"><div class="font-display text-3xl text-gold-light">15€</div><div class="text-xs tracking-widest text-stone-400 mt-1">PREMIUM SHISHA</div></div>
+        <div class="text-center border-x gold-hairline"><div class="font-display text-3xl text-gold-light">7 Tage</div><div class="text-xs tracking-widest text-stone-400 mt-1">GEÖFFNET</div></div>
+        <div class="text-center"><div class="font-display text-3xl text-gold-light">04:00</div><div class="text-xs tracking-widest text-stone-400 mt-1">FR & SA</div></div>
+      </div>
+    </div>
+
+    <div class="reveal relative">
+      <div class="marble aspect-[4/5] rounded-2xl gold-border overflow-hidden flex items-center justify-center">
+        <div class="text-center p-10">
+          <div class="logo-ring w-32 h-32 rounded-full mx-auto flex items-center justify-center mb-6">
+            <span class="font-display text-ink text-4xl font-bold">SL</span>
+          </div>
+          <div class="font-display text-2xl text-gradient-gold tracking-[0.3em]">SKYLINE</div>
+          <div class="text-xs text-gold/70 tracking-[0.4em] mt-2">EST. LAMPERTHEIM</div>
+          <div class="w-16 h-px bg-gold/40 mx-auto my-6"></div>
+          <p class="font-serif italic text-stone-400">"Eleganz hat keinen Preis – nur einen Ort."</p>
+        </div>
+      </div>
+      <div class="absolute -top-6 -right-6 w-32 h-32 gold-border rounded-2xl -z-10"></div>
+      <div class="absolute -bottom-6 -left-6 w-32 h-32 gold-border rounded-2xl -z-10"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MENU ============ -->
+<section id="menu" class="relative py-28 px-6 marble">
+  <div class="max-w-6xl mx-auto relative">
+    <div class="text-center mb-16 reveal">
+      <p class="text-gold tracking-[0.4em] text-xs mb-3">DIE KARTE</p>
+      <h2 class="brush-title font-display text-4xl sm:text-6xl text-gradient-gold">Unser Menü</h2>
+      <p class="font-serif italic text-stone-400 mt-4">Erlesene Getränke, kleine Speisen und feinste Tabake.</p>
+    </div>
+
+    <!-- Tabs -->
+    <div id="menuTabs" class="flex flex-wrap justify-center gap-2 mb-12 reveal">
+      <!-- generated -->
+    </div>
+
+    <div id="menuPanels" class="reveal"></div>
+  </div>
+</section>
+
+<!-- ============ SHISHA ============ -->
+<section id="shisha" class="relative py-28 px-6 overflow-hidden">
+  <img class="smoke top-10 left-0 w-[500px]" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'><defs><radialGradient id='g'><stop offset='0%25' stop-color='%23d4af37' stop-opacity='0.18'/><stop offset='100%25' stop-color='%23000' stop-opacity='0'/></radialGradient></defs><circle cx='300' cy='300' r='280' fill='url(%23g)'/></svg>" alt="">
+
+  <div class="max-w-6xl mx-auto relative">
+    <div class="text-center mb-16 reveal">
+      <p class="text-gold tracking-[0.4em] text-xs mb-3">SHISHAKARTE</p>
+      <h2 class="brush-title font-display text-4xl sm:text-6xl text-gradient-gold">Premium Shisha</h2>
+      <p class="font-serif italic text-stone-400 mt-4">Handverlesene Tabake. Sorgfältig zubereitet.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- STANDARD -->
+      <div class="card-dark rounded-2xl p-8 reveal">
+        <div class="flex items-end justify-between border-b gold-hairline pb-4 mb-6">
+          <h3 class="font-display text-3xl text-gradient-gold tracking-widest">STANDARD</h3>
+          <div class="font-display text-2xl text-gold-light">15,00 €</div>
+        </div>
+        <ul class="space-y-2 font-serif text-stone-200 text-lg">
+          <li>African King</li><li>African Queen</li><li>Bonnie & Clyde</li>
+          <li>FFM</li><li>Love 66</li><li>Ice Kaktus</li>
+          <li>Blaulicht Rasporn</li><li>Rasporn</li><li>Wassermelone</li>
+          <li>Ananas</li><li>Kiwi</li><li>Persischer Apfel</li>
+          <li>Orange & Blutorange</li><li>Ice Bonbon</li><li>Sommer in Beirut</li>
+        </ul>
+      </div>
+
+      <!-- TRADI -->
+      <div class="card-dark rounded-2xl p-8 reveal">
+        <div class="flex items-end justify-between border-b gold-hairline pb-4 mb-6">
+          <h3 class="font-display text-3xl text-gradient-gold tracking-widest">TRADI</h3>
+          <div class="font-display text-2xl text-gold-light">15,00 €</div>
+        </div>
+        <ul class="space-y-2 font-serif text-stone-200 text-lg">
+          <li>Orange Minze</li><li>Traube Minze</li><li>Black Nana</li>
+          <li>Doppel Apfel</li><li>Falem Kaugummi</li><li>Pistazie Vanille</li>
+        </ul>
+        <div class="mt-8 pt-6 border-t gold-hairline flex justify-between items-center">
+          <span class="font-display tracking-widest text-gold-light">KOPFWECHSEL</span>
+          <span class="font-display text-xl text-gold-light">7,00 €</span>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-center font-serif italic text-gold/80 mt-10 reveal">
+      ✦ Weitere Sorten auf Anfrage ✦
+    </p>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section id="gallery" class="relative py-28 px-6 marble">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-16 reveal">
+      <p class="text-gold tracking-[0.4em] text-xs mb-3">EINBLICKE</p>
+      <h2 class="brush-title font-display text-4xl sm:text-6xl text-gradient-gold">Galerie</h2>
+    </div>
+
+    <div class="columns-2 md:columns-3 lg:columns-4 gap-4 [&>div]:mb-4 reveal">
+      <div class="gallery-item"><img src="/images/interior-lounge.png" alt="Skyline Lounge – Lounge-Bereich" class="w-full"></div>
+      <div class="gallery-item"><img src="/images/interior-gaming.png" alt="Skyline Lounge – Gaming-Bereich" class="w-full"></div>
+      <div class="gallery-item"><img src="/images/interior-lounge.png" alt="Skyline Lounge – Lounge-Atmosphäre" class="w-full"></div>
+      <div class="gallery-item"><img src="/images/interior-gaming.png" alt="Skyline Lounge – Gaming-Atmosphäre" class="w-full"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LOCATION ============ -->
+<section id="location" class="relative py-28 px-6">
+  <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-stretch">
+    <div class="reveal card-dark rounded-2xl p-10">
+      <p class="text-gold tracking-[0.4em] text-xs mb-3">BESUCH UNS</p>
+      <h2 class="font-display text-4xl sm:text-5xl text-gradient-gold mb-8">Standort & Öffnungszeiten</h2>
+
+      <div class="space-y-6 font-serif text-lg">
+        <div>
+          <div class="text-gold-light text-sm tracking-widest uppercase mb-1">Adresse</div>
+          <div class="text-stone-200">Ernst-Ludwig-Straße 11<br/>68623 Lampertheim</div>
+        </div>
+        <div>
+          <div class="text-gold-light text-sm tracking-widest uppercase mb-1">Telefon</div>
+          <a href="tel:+4917623710690" class="text-stone-200 hover:text-gold-light">0176 2371069</a>
+        </div>
+        <div>
+          <div class="text-gold-light text-sm tracking-widest uppercase mb-1">Instagram</div>
+          <a href="https://instagram.com/skyline_lounge_" target="_blank" rel="noopener" class="text-stone-200 hover:text-gold-light">@skyline_lounge_</a>
+        </div>
+
+        <div class="pt-4 border-t gold-hairline">
+          <div class="text-gold-light text-sm tracking-widest uppercase mb-3">Öffnungszeiten</div>
+          <ul class="space-y-1.5 text-stone-200">
+            <li class="flex justify-between"><span>Montag – Donnerstag</span><span class="text-gold-soft">13:00 – 01:00</span></li>
+            <li class="flex justify-between"><span>Freitag & Samstag</span><span class="text-gold-soft">13:00 – 04:00</span></li>
+            <li class="flex justify-between"><span>Sonntag</span><span class="text-gold-soft">13:00 – 01:00</span></li>
+          </ul>
+        </div>
+
+        <div class="pt-4 flex flex-wrap gap-3">
+          <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full gold-border text-gold-light text-xs tracking-widest">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14 0M2 8.82a16 16 0 0 1 20 0M8.5 16.43a6 6 0 0 1 7 0M12 20h.01"/></svg>
+            FREE WLAN
+          </span>
+          <a href="https://www.google.com/maps/search/?api=1&query=Ernst-Ludwig-Stra%C3%9Fe+11+68623+Lampertheim" target="_blank" rel="noopener" class="btn-ghost-gold px-5 py-2 rounded-full text-xs tracking-widest uppercase">Route planen</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal rounded-2xl overflow-hidden gold-border min-h-[400px]">
+      <iframe
+        title="Standort Skyline Lounge"
+        src="https://www.google.com/maps?q=Ernst-Ludwig-Stra%C3%9Fe+11,+68623+Lampertheim&output=embed"
+        class="w-full h-full min-h-[400px] grayscale contrast-125"
+        style="border:0; filter: invert(0.92) hue-rotate(180deg) saturate(.4) brightness(.9);"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT / RESERVE ============ -->
+<section id="contact" class="relative py-28 px-6 marble">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-12 reveal">
+      <p class="text-gold tracking-[0.4em] text-xs mb-3">RESERVIERUNG</p>
+      <h2 class="brush-title font-display text-4xl sm:text-6xl text-gradient-gold">Sichern Sie Ihren Tisch</h2>
+      <p class="font-serif italic text-stone-400 mt-4">Wir freuen uns auf Ihren Besuch.</p>
+    </div>
+
+    <div class="grid lg:grid-cols-5 gap-8">
+      <form onsubmit="submitForm(event)" class="card-dark rounded-2xl p-8 lg:col-span-3 space-y-5 reveal">
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div>
+            <label class="text-xs tracking-widest text-gold-light uppercase">Name</label>
+            <input required type="text" class="w-full mt-2 bg-black/40 border gold-hairline rounded-lg px-4 py-3 text-stone-100 focus:outline-none focus:border-gold-light">
+          </div>
+          <div>
+            <label class="text-xs tracking-widest text-gold-light uppercase">Telefon</label>
+            <input required type="tel" class="w-full mt-2 bg-black/40 border gold-hairline rounded-lg px-4 py-3 text-stone-100 focus:outline-none focus:border-gold-light">
+          </div>
+          <div>
+            <label class="text-xs tracking-widest text-gold-light uppercase">Datum</label>
+            <input required type="date" class="w-full mt-2 bg-black/40 border gold-hairline rounded-lg px-4 py-3 text-stone-100 focus:outline-none focus:border-gold-light">
+          </div>
+          <div>
+            <label class="text-xs tracking-widest text-gold-light uppercase">Uhrzeit</label>
+            <input required type="time" class="w-full mt-2 bg-black/40 border gold-hairline rounded-lg px-4 py-3 text-stone-100 focus:outline-none focus:border-gold-light">
+          </div>
+          <div>
+            <label class="text-xs tracking-widest text-gold-light uppercase">Personen</label>
+            <input required type="number" min="1" value="2" class="w-full mt-2 bg-black/40 border gold-hairline rounded-lg px-4 py-3 text-stone-100 focus:outline-none focus:border-gold-light">
+          </div>
+          <div>
+            <label class="text-xs tracking-widest text-gold-light uppercase">E-Mail</label>
+            <input type="email" class="w-full mt-2 bg-black/40 border gold-hairline rounded-lg px-4 py-3 text-stone-100 focus:outline-none focus:border-gold-light">
+          </div>
+        </div>
+        <div>
+          <label class="text-xs tracking-widest text-gold-light uppercase">Nachricht</label>
+          <textarea rows="3" class="w-full mt-2 bg-black/40 border gold-hairline rounded-lg px-4 py-3 text-stone-100 focus:outline-none focus:border-gold-light"></textarea>
+        </div>
+        <button class="btn-gold w-full py-4 rounded-full text-sm uppercase tracking-widest">Reservierung senden</button>
+      </form>
+
+      <div class="lg:col-span-2 space-y-5 reveal">
+        <a href="tel:+4917623710690" class="card-dark rounded-2xl p-6 flex items-center gap-4 hover:border-gold-light transition">
+          <div class="logo-ring w-12 h-12 rounded-full flex items-center justify-center">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0a0a0a" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div>
+            <div class="text-xs tracking-widest text-gold-light">ANRUFEN</div>
+            <div class="font-display text-lg">0176 2371069</div>
+          </div>
+        </a>
+        <a href="https://wa.me/4917623710690" target="_blank" rel="noopener" class="card-dark rounded-2xl p-6 flex items-center gap-4 hover:border-gold-light transition">
+          <div class="logo-ring w-12 h-12 rounded-full flex items-center justify-center">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="#0a0a0a"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 0 1 8.412 3.488 11.82 11.82 0 0 1 3.48 8.413c-.003 6.554-5.338 11.89-11.893 11.89a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+          </div>
+          <div>
+            <div class="text-xs tracking-widest text-gold-light">WHATSAPP</div>
+            <div class="font-display text-lg">Direkt schreiben</div>
+          </div>
+        </a>
+        <a href="https://instagram.com/skyline_lounge_" target="_blank" rel="noopener" class="card-dark rounded-2xl p-6 flex items-center gap-4 hover:border-gold-light transition">
+          <div class="logo-ring w-12 h-12 rounded-full flex items-center justify-center">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0a0a0a" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01"/></svg>
+          </div>
+          <div>
+            <div class="text-xs tracking-widest text-gold-light">INSTAGRAM</div>
+            <div class="font-display text-lg">@skyline_lounge_</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="relative border-t border-gold/15 py-12 px-6 bg-black">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 items-center">
+    <div class="flex items-center gap-3 justify-center md:justify-start">
+      <div class="logo-ring w-12 h-12 rounded-full flex items-center justify-center">
+        <span class="font-display text-ink font-bold">SL</span>
+      </div>
+      <div>
+        <div class="font-display text-gold-light tracking-[0.25em] text-sm">SKYLINE LOUNGE</div>
+        <div class="text-[10px] tracking-[0.3em] text-gold/70">SHISHA · BAR · LOUNGE</div>
+      </div>
+    </div>
+    <div class="text-center text-xs text-stone-400 tracking-wider">
+      © 2026 Skyline Lounge · Lampertheim ·
+      <a href="#" class="hover:text-gold-light">Impressum</a> ·
+      <a href="#" class="hover:text-gold-light">Datenschutz</a>
+    </div>
+    <div class="text-center md:text-right text-[11px] tracking-[0.3em] text-gold/60">
+      DESIGN & MARKETING BY <span class="text-gold-light">AJ WEBDESIGN</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ RESERVATION MODAL ============ -->
+<div id="reserveModal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
+  <div class="card-dark rounded-2xl max-w-lg w-full p-8 relative">
+    <button onclick="closeReserve()" class="absolute top-4 right-4 text-gold-light hover:text-white text-2xl leading-none">×</button>
+    <div class="text-center mb-6">
+      <div class="logo-ring w-16 h-16 rounded-full mx-auto flex items-center justify-center mb-3">
+        <span class="font-display text-ink font-bold text-xl">SL</span>
+      </div>
+      <h3 class="font-display text-2xl text-gradient-gold">Tisch reservieren</h3>
+      <p class="text-stone-400 text-sm mt-2">Schnell & unkompliziert per Telefon oder WhatsApp.</p>
+    </div>
+    <div class="space-y-3">
+      <a href="tel:+4917623710690" class="btn-gold w-full block text-center py-3 rounded-full text-sm uppercase tracking-widest">📞 Anrufen: 0176 2371069</a>
+      <a href="https://wa.me/4917623710690?text=Hallo%20Skyline%20Lounge%2C%20ich%20m%C3%B6chte%20einen%20Tisch%20reservieren." target="_blank" rel="noopener" class="btn-ghost-gold w-full block text-center py-3 rounded-full text-sm uppercase tracking-widest">WhatsApp Nachricht</a>
+      <button onclick="closeReserve(); document.getElementById('contact').scrollIntoView({behavior:'smooth'})" class="w-full text-center py-3 text-sm text-stone-400 hover:text-gold-light">oder Online-Formular ausfüllen ↓</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ DATA & SCRIPTS ============ -->
+<script>
+/* ============ MENU DATA (exact from card) ============ */
+const MENU = [
+  { key:'hot', title:'Heiße Getränke', items:[
+    ['Espresso','2,00 €'], ['Doppelter Espresso','3,00 €'],
+    ['Kaffee Crema','2,50 €'], ['Cappuccino','3,00 €'],
+    ['Latte Macchiato','3,50 €'], ['Milchkaffee','3,00 €'],
+    ['Heiße Schokolade','3,00 €'],
+    ['Tee (verschiedene Sorten)','2,50 €'],
+    ['Frische Minze Tee','3,50 €'],
+  ]},
+  { key:'soft', title:'Softdrinks', items:[
+    ['Coca Cola 0,3L','3,00 €'], ['Coca Cola Zero 0,3L','3,00 €'],
+    ['Fanta 0,3L','3,00 €'], ['Sprite 0,3L','3,00 €'],
+    ['Spezi 0,3L','3,00 €'],
+    ['Mineralwasser still 0,25L','2,50 €'],
+    ['Mineralwasser medium 0,25L','2,50 €'],
+    ['Mineralwasser still 0,75L','5,50 €'],
+    ['Mineralwasser medium 0,75L','5,50 €'],
+  ]},
+  { key:'ice', title:'Elephant Bay Ice Tea (0,33L)', items:[
+    ['Pfirsich','3,50 €'], ['Zitrone','3,50 €'],
+    ['Granatapfel','3,50 €'], ['Mango','3,50 €'],
+    ['Wassermelone','3,50 €'],
+  ]},
+  { key:'energy', title:'Energy Drinks', items:[
+    ['Red Bull 0,25L','3,50 €'],
+    ['Red Bull Sugarfree 0,25L','3,50 €'],
+    ['Red Bull Tropical 0,25L','3,50 €'],
+    ['Red Bull Wassermelone 0,25L','3,50 €'],
+    ['Moloko 0,33L','4,00 €'],
+  ]},
+  { key:'juice', title:'Fruchtige Säfte (0,4L)', items:[
+    ['Apfelsaft','3,50 €'], ['Orangensaft','3,50 €'],
+    ['Maracuja','3,50 €'], ['Multivitamin','3,50 €'],
+    ['Ananas','3,50 €'], ['Apfelschorle','3,50 €'],
+  ]},
+  { key:'long', title:'Longdrinks (0,4L)', items:[
+    ['Vodka Energy','7,00 €'], ['Vodka Orange','7,00 €'],
+    ['Vodka Lemon','7,00 €'], ['Bacardi Cola','7,00 €'],
+    ['Whiskey Cola','7,00 €'], ['Gin Tonic','7,00 €'],
+    ['Malibu Ananas','7,00 €'], ['Tequila Sunrise','7,00 €'],
+  ]},
+  { key:'cocktails', title:'Cocktails', items:[
+    ['Mojito','8,50 €'], ['Caipirinha','8,50 €'],
+    ['Sex on the Beach','9,00 €'], ['Pina Colada','9,00 €'],
+    ['Mai Tai','9,50 €'], ['Long Island Ice Tea','10,00 €'],
+    ['— Alkoholfrei —',''],
+    ['Virgin Mojito','7,00 €'], ['Ipanema','7,00 €'],
+    ['Coconut Kiss','7,00 €'],
+    ['— Wein —',''],
+    ['Weinschorle weiß / rot','5,50 €'],
+  ]},
+  { key:'shots', title:'Shots (2cl)', items:[
+    ['Tequila','2,50 €'], ['Sambuca','2,50 €'],
+    ['Jägermeister','2,50 €'], ['Vodka','2,50 €'],
+    ['Apple Sourz','2,50 €'], ['Wodka Kirsch','2,50 €'],
+  ]},
+  { key:'beer', title:'Bier & Flaschen', items:[
+    ['Bitburger 0,33L','3,50 €'],
+    ['Bitburger Radler 0,33L','3,50 €'],
+    ['Erdinger Weißbier 0,5L','4,50 €'],
+    ['Corona 0,33L','4,00 €'],
+    ['— Flaschen 0,7L —',''],
+    ['Smirnoff + 4 Dosen','75,00 €'],
+    ['Absolut + 4 Dosen','85,00 €'],
+    ['Bacardi + 4 Dosen','85,00 €'],
+    ['Jack Daniels + 4 Dosen','100,00 €'],
+    ['Hennessy + 4 Dosen','130,00 €'],
+  ]},
+  { key:'baguette', title:'Baguette', items:[
+    ['Salami','6,50 €'], ['Schinken','6,50 €'],
+    ['Thunfisch','6,50 €'], ['Mozzarella & Tomate','6,50 €'],
+    ['Vegetarisch','6,50 €'],
+  ]},
+];
+
+const tabsEl = document.getElementById('menuTabs');
+const panelsEl = document.getElementById('menuPanels');
+
+MENU.forEach((cat, i) => {
+  const btn = document.createElement('button');
+  btn.className = 'menu-tab btn-ghost-gold px-5 py-2.5 rounded-full text-xs tracking-widest uppercase' + (i===0 ? ' tab-active' : '');
+  btn.textContent = cat.title;
+  btn.dataset.key = cat.key;
+  btn.onclick = () => selectTab(cat.key);
+  tabsEl.appendChild(btn);
+
+  const panel = document.createElement('div');
+  panel.id = 'panel-' + cat.key;
+  panel.className = 'menu-panel ' + (i===0 ? '' : 'hidden');
+  panel.innerHTML = `
+    <div class="card-dark rounded-2xl p-8 sm:p-12 max-w-3xl mx-auto">
+      <div class="text-center mb-8">
+        <h3 class="brush-title font-display text-2xl sm:text-3xl text-gradient-gold tracking-widest">${cat.title}</h3>
+      </div>
+      <div>
+        ${cat.items.map(([name, price]) => {
+          if (!price && name.startsWith('—')) {
+            return `<div class="py-3 text-center text-gold-light tracking-widest text-sm">${name}</div>`;
+          }
+          return `<div class="menu-row flex justify-between items-baseline gap-4 py-3">
+            <span class="font-serif text-lg text-stone-100">${name}</span>
+            <span class="font-display text-gold-soft whitespace-nowrap">${price}</span>
+          </div>`;
+        }).join('')}
+      </div>
+    </div>`;
+  panelsEl.appendChild(panel);
+});
+
+function selectTab(key) {
+  document.querySelectorAll('.menu-tab').forEach(b => b.classList.toggle('tab-active', b.dataset.key === key));
+  document.querySelectorAll('.menu-panel').forEach(p => p.classList.toggle('hidden', p.id !== 'panel-' + key));
+}
+
+/* Modal */
+function openReserve() {
+  const m = document.getElementById('reserveModal');
+  m.classList.remove('hidden'); m.classList.add('flex');
+}
+function closeReserve() {
+  const m = document.getElementById('reserveModal');
+  m.classList.add('hidden'); m.classList.remove('flex');
+}
+document.getElementById('reserveModal').addEventListener('click', e => {
+  if (e.target.id === 'reserveModal') closeReserve();
+});
+
+/* Form */
+function submitForm(e) {
+  e.preventDefault();
+  alert('Vielen Dank! Wir melden uns in Kürze zur Bestätigung Ihrer Reservierung.');
+  e.target.reset();
+}
+
+/* Mobile nav */
+const burger = document.getElementById('burger');
+const mobileNav = document.getElementById('mobileNav');
+burger.addEventListener('click', () => mobileNav.classList.toggle('hidden'));
+mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileNav.classList.add('hidden')));
+
+/* Navbar scroll state */
+window.addEventListener('scroll', () => {
+  const nav = document.getElementById('navbar');
+  if (window.scrollY > 30) nav.classList.add('shadow-2xl','bg-black/85');
+  else nav.classList.remove('shadow-2xl','bg-black/85');
+});
+
+/* Hero background slider */
+(function () {
+  const slides = document.querySelectorAll('.hero-slide');
+  if (slides.length < 2) return;
+  let current = 0;
+  setInterval(() => {
+    slides[current].classList.remove('active');
+    current = (current + 1) % slides.length;
+    slides[current].classList.add('active');
+  }, 5000);
+})();
+</script>
+</body>
+</html>
